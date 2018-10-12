@@ -1,0 +1,35 @@
+﻿<Page x:Class="AlgorithmDemonstrate.Pages.Introduce"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AlgorithmDemonstrate.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="490" d:DesignWidth="820"
+      Title="Introduce">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="361*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="IntroduceTextBox" Height="Auto" Margin="10,35,10,10" TextWrapping="Wrap" Text="TextBox" Background="White" Foreground="Black" VerticalContentAlignment="Top" IsReadOnly="True" FontSize="16" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto"/>
+
+        <ComboBox x:Name="SelectBox" Width="Auto" SelectedIndex="0" Margin="10,10,0,0" FontSize="14" FontWeight="Bold" IsReadOnly="True" Height="20" Foreground="Black" SelectionChanged="SelectBox_SelectionChanged" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+            <ComboBoxItem Content="冒泡排序(Bubble Sort)"/>
+            <ComboBoxItem Content="双向冒泡排序(Cocktail Sort)"/>
+            <ComboBoxItem Content="奇偶排序(Odd-Even Sort)"/>
+            <ComboBoxItem Content="梳排序(Comb Sort)"/>
+            <ComboBoxItem Content="地精排序(Gnome Sort)"/>
+            <ComboBoxItem Content="快速排序(Quick Sort)"/>
+            <ComboBoxItem Content="选择排序(Selection Sort)"/>
+            <ComboBoxItem Content="双向选择排序(Selection Cocktail Sort)"/>
+            <ComboBoxItem Content="堆排序(Heap Sort)"/>
+            <ComboBoxItem Content="插入排序(Insertion Sort)"/>
+            <ComboBoxItem Content="希尔排序(Shell Sort)"/>
+            <ComboBoxItem Content="归并排序(Merge Sort)"/>
+            <ComboBoxItem Content="臭皮匠排序(Stooge Sort)"/>
+        </ComboBox>
+
+    </Grid>
+</Page>
